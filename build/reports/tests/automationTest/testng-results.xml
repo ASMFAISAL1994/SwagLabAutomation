@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="68592" started-at="2024-02-07T12:37:31 BDT" finished-at="2024-02-07T12:38:40 BDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Cucumber$CucumberRunnerTests@3835c46]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Cucumber Test Run" duration-ms="68592" started-at="2024-02-07T12:37:31 BDT" finished-at="2024-02-07T12:38:40 BDT">
+      <class name="TestRunner.Cucumber$CucumberRunnerTests">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.Cucumber$CucumberRunnerTests@3835c46]" name="setUpClass" is-config="true" duration-ms="848" started-at="2024-02-07T12:37:31 BDT" finished-at="2024-02-07T12:37:32 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Cucumber$CucumberRunnerTests@3835c46]" name="runScenario" duration-ms="65981" started-at="2024-02-07T12:37:32 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-07T12:38:38 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user will fillup Add Customer form with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add Customer]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 121.0.6167.139 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'asms-MacBook-Pro.local', ip: 'fe80:0:0:0:42d:da31:b37d:ed43%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: [], prefs: {profile: {managed_default_content_settings: {geolocation: 2, notifications: 2}}}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: [], prefs: {profile: {managed_default_content_settings: {geolocation: 2, notifications: 2}}}}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 121.0.6167.139 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'asms-MacBook-Pro.local', ip: 'fe80:0:0:0:42d:da31:b37d:ed43%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: [], prefs: {profile: {managed_default_content_settings: {geolocation: 2, notifications: 2}}}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: [], prefs: {profile: {managed_default_content_settings: {geolocation: 2, notifications: 2}}}}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at Core.Helper.browser(Helper.java:32)
+at Stepdefination.AddCustomerStepdefs.baseUrl(AddCustomerStepdefs.java:28)
+at ✽.base url(file:///Users/asmfaisal/Desktop/BANKAUTOMATIONTESTNG/XYZBANKAUTOMATION/src/test/resources/Feature.login/01AddCustomer.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Cucumber$CucumberRunnerTests@3835c46]" name="runScenario" duration-ms="1151" started-at="2024-02-07T12:38:38 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-07T12:38:39 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["open account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Open Account]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at POM.Element.userInOpenAccountPage(Element.java:50)
+at Stepdefination.OpenAccountStepdefs.userInOpenAccountPage(OpenAccountStepdefs.java:16)
+at ✽.user in open account page(file:///Users/asmfaisal/Desktop/BANKAUTOMATIONTESTNG/XYZBANKAUTOMATION/src/test/resources/Feature.login/02openaccount.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.Cucumber$CucumberRunnerTests@3835c46]" name="tearDownClass" is-config="true" duration-ms="352" started-at="2024-02-07T12:38:39 BDT" finished-at="2024-02-07T12:38:40 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.Cucumber$CucumberRunnerTests -->
+    </test> <!-- Cucumber Test Run -->
+  </suite> <!-- Suite -->
+</testng-results>
